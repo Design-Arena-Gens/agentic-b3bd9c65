@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 12px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-brand-blue text-white font-body antialiased;
+}
+
+.container-content {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-brand-saffron text-brand-blue font-semibold px-5 py-3 shadow-soft hover:opacity-90 transition;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border border-white/20 text-white font-semibold px-5 py-3 hover:bg-white/5 transition;
+}
+
+.card {
+  @apply rounded-2xl bg-white text-brand-blue shadow-soft;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm text-white;
+}
